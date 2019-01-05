@@ -12,7 +12,7 @@ USAGE
 -----
 
 tar cf - dir | undup | xz > dir.tar.undup.xz
-xzcat dir.tar.undup.xz | undup -d -o dir.tar; tar xf dir.tar
+xzcat dir.tar.undup.xz | undup -d | tar xv
 
 SAMPLE RESULTS
 --------------

@@ -153,7 +153,7 @@ u64 ntohll(u64 x)
 
 void usage(const char *cmd)
 {
-    die("Usage: %s [-d] [-o output] [input]\n", cmd);
+    die("Usage: %s [-d] [-o output] [input]\nExample:\n-compress: tar cvf - dir | %s | xz > dir.tar.undup.xz\n-decompress: xzcat dir.tar.undup.xz | %s -d | tar xv\n", cmd, cmd, cmd);
 }
 
 void hash(const void *buf, int n, void *outbuf)
